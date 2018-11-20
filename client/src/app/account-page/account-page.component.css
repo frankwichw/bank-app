@@ -1,0 +1,14 @@
+.side-nav {
+    list-style: none;   
+    padding: 0px;
+    text-align: center;
+}
+
+.side-nav li {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.side-nav li:nth-child(2n+2) {  
+    background-color: #f2f1ea;
+}

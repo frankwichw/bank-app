@@ -1,0 +1,11 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}

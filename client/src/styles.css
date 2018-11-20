@@ -1,0 +1,200 @@
+body {
+    margin: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    color: #000714;
+}
+
+.align-right {
+    text-align: right;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.large-header {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+legend {
+    font-size: 1.6em;
+}
+
+.radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.account-type:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    padding: 0px 20px;
+    margin: 20px 0px;
+    font-size: 1.3em;
+}
+
+.skip-link:link, .skip-link:visited {
+    color: sandybrown;
+    background: rgb(36, 36, 36);
+    position: absolute;
+    top: -50px;
+}
+
+.skip-link:focus {
+    top: 0px;
+}
+
+a:link, a:visited {
+    transition: color 0.5s ease;
+    color: #000714;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    color: #669961;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.input-text {
+    width: 250px;
+    height: 30px;
+    margin: 8px 0px;
+}
+
+.button {
+    transition: background-color 0.5s ease;
+    background-color: #000714;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 12px;
+    margin-top: 4px;
+    color: #fff; 
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #669961;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background: #f2f1ea;
+
+}
+
+td {
+    padding: 5px;
+}
+
+/* container styles */ 
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-3 {
+    margin: 30px 0px 30px 30px;
+    width: 22%;
+    display: flex;
+    display: inline-block;
+    border-radius: 8px;
+    border: #f2f1ea 4px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    vertical-align: top;
+    -webkit-box-shadow: 1px 9px 31px -14px rgba(0,0,0,0.41);
+    -moz-box-shadow: 1px 9px 31px -14px rgba(0,0,0,0.41);
+    box-shadow: 1px 9px 31px -14px rgba(0,0,0,0.41);
+}
+
+.col-6 {
+    margin: 30px 0px 30px 30px;
+    width: 47%;
+    display: flex;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col-9 {
+    margin: 30px 0px 30px 30px;
+    width: 72%;
+    display: flex;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fullwidth {
+    width: 100%;
+    height: 300px;
+    padding: 20px 0px;
+}
+
+.fullwidth-yellow {
+    background: #b7b5a8 url("assets/images/adventure-backpack-clouds.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fullwidth-small {
+    padding: 0px 30px;
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-3 {
+        width: 93%;
+        margin-left: 3%;
+    }
+
+    .col-6 {
+        width: 93%;
+        margin-left: 3%;
+    }
+
+    .col-9 {
+        width: 93%;
+        margin-left: 3%;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="fullwidth">
+  <div class="login-container">
+    <form>
+      <label for="username">Username:</label><br>
+      <input id="username" class="input-text" type="text" name="username" placeholder="username" (input)="handleUsernameInput($event)"><br>
+      <label for="password">Password:</label><br>
+      <input id="password" class="input-text" type="password" name="password" placeholder="password" (input)="handlePasswordInput($event)" (keyup)="handleEnterPress($event)"><br>
+      <input class="button" type="button" name="Log in" value="Log in" (click)="handleLoginClick()">
+    </form><br>
+  </div>
+  <div class="signup-container">
+    <p>Don't have an account? <a routerLink="/signup">Sign up</a>!</p>
+  </div>
+</div>
