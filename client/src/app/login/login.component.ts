@@ -8,6 +8,11 @@ import { ComponentFactoryResolver } from '@angular/core/src/render3';
 })
 export class LoginComponent implements OnInit {
 
+  account: { email: string, password: string } = {
+    email: 'test@example.com',
+    password: ''
+  };
+
   // initializing username and password to be given a value later
   username: string;
   password: string;
@@ -30,7 +35,8 @@ export class LoginComponent implements OnInit {
 
   handleLoginClick() {
     event.preventDefault;
-    console.log(`username: ${this.username}\npassword: ${this.password}`);
+    // console.log(`username: ${this.username}\npassword: ${this.password}`);
+    console.log (this.account);
     // log in user, this should be a service? 
     // assuming that this should take the username and password  
     // send them to a service that determiens if it's a valid user and pass
